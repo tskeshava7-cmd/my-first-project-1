@@ -1,0 +1,58 @@
+public class stack (
+	private static final int MAX = 10;
+
+	private int arr[];
+	private int count; // number of elements in the stack
+
+	public Stack() {
+		arr = new int[MAX];
+		count = 0;
+	}
+
+	public void push(int x) throws Exception {
+		if (count < MAX) {
+			arr[count++] = x;
+		} else {
+			throw new exception("Stack is full");
+		}
+	}
+
+	public int pop() throws exception {
+		int x;
+		if (count > 0) {
+			x = arr[--count];
+		} else {
+			throw new exception("stack is empty");
+		}
+		return x;
+	}
+	
+	public Boolean is Empty() {
+		return(count == 0);
+	}	
+}
+
+
+
+
+public class TestStack {
+	public static void (String[] args) {
+		stack s = new Stack();
+	for (int i = 0; i < 14; i++) {
+	try {
+		s.push(i);
+	} catch (Exception e) {
+		System.out.println(e.getMessage());
+	}
+	}
+		for (int i = 0; i<14; i++) {
+		try {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+      }
+}
+
+	
+ 
